@@ -126,9 +126,9 @@ Mvh Mellomleder
 ```
 
 To bildefiler:
-![](/uploads/upload_20a07ccc3dabaf9c0a11ba97dec3d730.jpg)
+![](./uploads/upload_20a07ccc3dabaf9c0a11ba97dec3d730.jpg)
 og
-![](/uploads/upload_58acb4993a4f8d81aaac13a9c574d6f0.jpg)
+![](./uploads/upload_58acb4993a4f8d81aaac13a9c574d6f0.jpg)
 
 Første inntrykk var å kjøre `strings`, `exiftool` og andre steg-verktøy, men så raskt at det var lite å hente umiddelbart.
 
@@ -144,7 +144,7 @@ Mens baksiden (leser clock-wise): `IPLA`
 Som viser seg å være _helt_ feil.
 Man må _rotere_ bildet 180 grader for så å kjøre PigPen-dekoding for å få løsningsordet.
 
-![](/uploads/upload_53950ba841418fb2321735d444da47dc.png)
+![](./uploads/upload_53950ba841418fb2321735d444da47dc.png)
 
 `PST{JULENISSENERTEIT}`
 
@@ -198,7 +198,7 @@ Varelageret finner du her, og bruk programmeringsgrensesnittnøkkel v1_pgmsqxmdd
 
 Man får utlevert url til NPSTs [varelager](https://varelager.p26e.dev/)
 
-![](/uploads/upload_b015f59a5435a3ff036d5bb1b5d28675.png)
+![](./uploads/upload_b015f59a5435a3ff036d5bb1b5d28675.png)
 
 Her får man muligheten til å søke i databasene til alvene. Sjekker man ut kildekoden til siden finner man `bundle.js` som gir hint om hjelp som søkeord.
 
@@ -275,7 +275,7 @@ en Alvebetjent gjorde meg oppmerksom på at det kan ha foregått En nøkkelutvek
 
 Etter mye fram og tilbake med verktøy både online, cybershef og i python setter vi opp følgende innstilling til å knekke koden:
 
-![](/uploads/upload_87b52f18937058c89aafeaf2d29f7402.png)
+![](./uploads/upload_87b52f18937058c89aafeaf2d29f7402.png)
 
 ```
 NPST skal endre paa pakkefordelingsruta i aar. Det gir mulighet for aa sabotere. XOXO M. PS Ikke god jul. PS pst{nootnoot}
@@ -304,12 +304,12 @@ En av alvebetjentene fant et løst frimerke i postmottaket. Initielle undersøke
 Motivet på frimerket er av en slik karakter at det må undersøkes nærmere. Kan du ta en titt?
 ```
 
-![](/uploads/upload_8ce7d8f5d5283146f912b47bcdb70fab.png)
+![](./uploads/upload_8ce7d8f5d5283146f912b47bcdb70fab.png)
 
 Ser man visuelt på Red0-planet så finner man:
 
 Dette finner man i Red0, Green0 og Blue0:
-![](/uploads/upload_4a59af46924c8e5d1ff1d692ab95c150.png) ![](/uploads/upload_63473909ae6953d7a7c0185810657a14.png) ![](/uploads/upload_4e9c7b78c9a0786e6eb325c5a41853bc.png)
+![](./uploads/upload_4a59af46924c8e5d1ff1d692ab95c150.png) ![](./uploads/upload_63473909ae6953d7a7c0185810657a14.png) ![](./uploads/upload_4e9c7b78c9a0786e6eb325c5a41853bc.png)
 
 Trekker man ut dataene fra cybershef med funksjonen "Exctract LSB" og velger den Green0 så ser man at headeren av dette planet begynner på .SLEDE8 som indikerer at vi har funnet en binærfil for [slede8](https://slede8.p26e.dev/)
 
@@ -329,7 +329,7 @@ Utifra hintet i Red0 så skal vi kjøre binærfila for SLEDE8 og ta inn føde i 
 
 Nå sier instruksjonene i Red0 at vi skal XoRe resultatet av slede kjøringa med Blue0-laget. Dette gjøres best i Cybershef - men først må vi encode outputen av Slede8 til hex. Dette skal være nøkkelen til XOR-operasjonen.
 
-![](/uploads/upload_7bb0be3f608427a34ea65e6f9b771124.png)
+![](./uploads/upload_7bb0be3f608427a34ea65e6f9b771124.png)
 
 Resultatet vi får på den andre siden er bare 0'er og f'er. Enten så er dette binær kode eller så er det ett eller annet som danner noe grafisk. Etter justering av bredden av teksten i cybershef ser vi fort at dette danner firkanter i en QR-kode. Vi finner ut at linjeskillet for å tegne koden riktig er på 192-karakterer. Vi skrever et lite script:
 
@@ -345,7 +345,7 @@ I strengen for data så bytter vi også om på tegnene slik at 0 blir █ og f b
 
 Vi ender til slutt opp med 3 x QR-kode som er veldig strukket. Vi redigerer litt i paint og trykker den sammen til den blir scanbar av app som vi bruker på telefonen. Dette danner da dette fine bildet:
 
-![](/uploads/upload_612fd41191fc331c64669b37f9cd116d.png)
+![](./uploads/upload_612fd41191fc331c64669b37f9cd116d.png)
 
 Flagget er `PST{R3m3mb3r_m3?_W3_h4d_SO_MUCH_FUN_t0g3th3r!_:D}`
 
@@ -550,23 +550,23 @@ Mvh Mellomleder
 
 Her får vi utdelt et bilde `Rudolf.png`, `lost_key.txt` og `gps.7z`. gps.7z er passordbeskyttet men man ser at den inneholder `Reindeer_tracker.kml`. Rudolf.png blir tatt inn i stegsolve og man finner fort at det skjuler seg en skult tekst i Red2-planet: floduR123
 
-![](/uploads/upload_bdde185c218027375fe54baf028ac591.png)
+![](./uploads/upload_bdde185c218027375fe54baf028ac591.png)
 
 Vi regner med at dette er passordet for gps.7z som gjør at vi får ut filen Reindeer_tracker.kml og det stemmer på en prikk. Tracker-fila inneholder 4 gps-spor av Rudolf, Prancer, Comet, Cupid og Slede.
 
 Filen kan vi laste opp til https://www.gpsvisualizer.com for å se på de ulike gps-sporene som er oppretta:
 
-![](/uploads/upload_2bca4672c357fd672b17cd8bb82bea0a.png)
+![](./uploads/upload_2bca4672c357fd672b17cd8bb82bea0a.png)
 
 Å finne neste steg var noe utfordrende da data kan gjemmes mange steder her. Var det en sammenstilling av alle sporene som skulle gjøres? Hadde høydedataene mot lang/long-posisjonene noe å si?
 
 Til syvende å sist så var løsningen ganske **teit**, da man ser at de ulike sporene har noe variasjoner og artifakter. Det ser nesten ut som noen raker eller hakk i sporene:
 
-![](/uploads/upload_5439fee30dbe79c25c96c0cfff52b3bc.png)
+![](./uploads/upload_5439fee30dbe79c25c96c0cfff52b3bc.png)
 
 Ved å sammenligne flere av disse abnormalitetene så kom man over på tanken om at dette måtte være en representasjon av morse-tegn. Vi går da over alle sporene å begynner i samme rekkefølge som filen dikterer:
 
-![](/uploads/upload_9e2a0c2d354c9155d7f206e3836a1c6b.png)
+![](./uploads/upload_9e2a0c2d354c9155d7f206e3836a1c6b.png)
 
 `PST{RUNFORESTRUN}`
 
@@ -582,7 +582,7 @@ Mvh Mellomleder
 
 Innholdet av opptak.gif virker tilsynelatende som bare støy:
 
-![](/uploads/upload_d9f630aa1200fd69a15699298511e58a.png)
+![](./uploads/upload_d9f630aa1200fd69a15699298511e58a.png)
 
 I oppgaven så har de uthevet bokstavene RØD som henviser til det røde planet på bildene som er satt sammen til en gif. Først må vi eksportere alle framsene av .gif-en til enkeltstående bilder.
 
@@ -593,7 +593,7 @@ Nå var var det tid for å konvertere enkeltstående bilder til å vise deres R�
 `convert target-0.png -channel R -separate target_out_0.png`
 
 Da kommer dette til syne i det første bildet:
-![](/uploads/upload_ec9e71eab3fa4641453a6b45309d7610.png)
+![](./uploads/upload_ec9e71eab3fa4641453a6b45309d7610.png)
 
 For oss som er redde for bash-script så ble det laget dette python-scriptet for å konvertere alle filene (111 stk):
 
@@ -609,11 +609,11 @@ Nå kan vi sette sammen alle bildene til en gif igjen med dette online-verktøye
 
 Når dette er gjort så kan vi også croppe størrelsen på gif-animasjonen slik at vi får bare sett på tallene som gjemmer seg oppe til venstre hjørne:
 
-![](/uploads/upload_f85606e3efe1f06adbea7efe2e07937d.gif)
+![](./uploads/upload_f85606e3efe1f06adbea7efe2e07937d.gif)
 
 Nå kan vi konvertere ut disse til bilder igjen. Samme nettsted har også splitfunksjon som gir en pen visning av alle enkeltbilder etter split:
 
-![](/uploads/upload_15b5080bc7ed5504eed08b24f3b49033.png)
+![](./uploads/upload_15b5080bc7ed5504eed08b24f3b49033.png)
 
 Det er kanskje noe vanskelig å se her men dette resulterer i tallene:
 
@@ -621,7 +621,7 @@ Det er kanskje noe vanskelig å se her men dette resulterer i tallene:
 
 Etter en kjapp glans over disse tallene så ser vi fort at dette er desimalrepresentasjonen av ASCII-tekst. Da kan vi enkelt ta disse tallene inn i cybershef og konvertere de:
 
-![](/uploads/upload_723e9ceb0a159cdbc690c7963547daca.png)
+![](./uploads/upload_723e9ceb0a159cdbc690c7963547daca.png)
 
 Da får vi flagget: `PST{HerVarDetIkkeMyeÅSeGitt...}`
 
@@ -641,11 +641,11 @@ En lydfil kan inneholde flere skjulte koder på mange nivå. Det første er å h
 
 Vi kan åpne lydfilen i Sonic Visualizer og se at det er tydlige endringer i lydkurvene:
 
-![](/uploads/upload_c529e28a5d1a033c7749defddc0918ce.png)
+![](./uploads/upload_c529e28a5d1a033c7749defddc0918ce.png)
 
 Sonic Visualizer har også en funksjon får å legge til spektogram for lydfilen man har åpnet. Når vi kjører denne funksjonen så ser vi at flagget vårt kommer til syne:
 
-![](/uploads/upload_f4e43fb818b8957f148f75602d6a4711.png)
+![](./uploads/upload_f4e43fb818b8957f148f75602d6a4711.png)
 
 `PST{H4KKIPL4PL4T4}`
 
@@ -737,7 +737,7 @@ Mellomleder
 
 Her får vi utdelt en .git-repo som ikke inneholder noen vireklige data. Dete eneste mystiske her er at det er veldig mange commits som strekker seg over mange dager, også fram i tid. Man finner ut at repoen tilhører brukeren [underleder](https://github.com/underleder) som på github har dette som eneste informasjon:
 
-![](/uploads/upload_0fa2ccc72b2075902106cd50ef05f3a9.png)
+![](./uploads/upload_0fa2ccc72b2075902106cd50ef05f3a9.png)
 
 Dette sier oss at vi bør ta en titt på rekkefølga til alle commitene som har blitt gjort i repoet vi har mottatt i zip og prøve å gruppere på samme format slik som gjøres i github.
 
@@ -778,7 +778,7 @@ for year in range(2020, 2024):
 
 Dette resulterer i flagget:
 
-![](/uploads/upload_dc38e86512b5c0c10a8dc823cf6216c1.png)
+![](./uploads/upload_dc38e86512b5c0c10a8dc823cf6216c1.png)
 
 `PST{GET_CLEAN_GO_GREEN!}`
 
@@ -945,7 +945,7 @@ Det klarte ingen av oss å svare på.
 
 Her får vi altså oppgave å sjekke listen med `snille_og_slemme.pdf` for å se hvem som er snill og jobber for NPST, men som har noe som likevell ikke stemmer. Her er en enkel løsning å formatere pdf-dataene slik at de passer fint i excel.
 
-![](/uploads/upload_fbab4bc996721747ab4426aefae77d69.png)
+![](./uploads/upload_fbab4bc996721747ab4426aefae77d69.png)
 
 Her finner vi fort ut at Maximilian er den som skiller seg ut og vi kjører på med `PST{Maximilian}` som er løsningen på denne oppgaven og vi har nå avslørt identiteten til -M
 
@@ -970,9 +970,9 @@ Rapporter tilbake med julenissens passord omkranset av PST{ og }, og bruk gjenop
 Mvh Mellomleder
 ```
 
-![](/uploads/upload_2d0714d98ea1e2f7fa71b086d49b1888.png)
+![](./uploads/upload_2d0714d98ea1e2f7fa71b086d49b1888.png)
 
-![](/uploads/upload_012f8f91b2560a1a4da74474eac02172.png)
+![](./uploads/upload_012f8f91b2560a1a4da74474eac02172.png)
 
 Vi fant de 4 favorittreinsdyrene til Julenissen i luke14. Nå var det bare for oss å sette de i alfabetisk rekkefølge - `Comet;Cupid;Prancer;Rudolf`
 
@@ -997,7 +997,7 @@ Vi har nå svar på alle kontrollspørsmålene, som gjør at vi får generert en
 
 Under Luke 10 så ble man igjen lenket til NPSTs varelager. Sammen med alle andre som ble lastet til denne siden, så lastet man nå også en misstenkelig bildefil som ikke har vært der før.
 
-![](/uploads/upload_bd15cb03c897733f3365f0e91f6c8b56.png)
+![](./uploads/upload_bd15cb03c897733f3365f0e91f6c8b56.png)
 
 Første egg blir da `PST{EGG_StRpiITbqyEsBJM}`
 
@@ -1017,7 +1017,7 @@ Men også:
 
 Ettersom vi vet både plaintext og ciphertext her så har vi mulighet til å generere keys. Vi trenger først bare å konvertere binærcipher-data til hex og plaintexten til hex og dra det inn i cybershef:
 
-![](/uploads/upload_fc5310a08aad6932ca635cdc94d292b8.png)
+![](./uploads/upload_fc5310a08aad6932ca635cdc94d292b8.png)
 
 Vi ender da opp med `eggkolonpstkroellparentesertelujkroellparentes` som oversettes til flagg `PST{erteluj}`
 
@@ -1036,7 +1036,7 @@ r1 = `hvor peker klokka mon tro.`
 g1 = `ikke tall men antall streker langs klokka...`
 b0 = `lang kort lang kort`
 
-![](/uploads/upload_98ac1ba23481ab323966958b632e0983.png)
+![](./uploads/upload_98ac1ba23481ab323966958b632e0983.png)
 
 antall streker totalt: 12 \* 5 = 60 = 1 min = 1 strek
 
