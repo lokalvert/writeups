@@ -309,6 +309,7 @@ Motivet på frimerket er av en slik karakter at det må undersøkes nærmere. Ka
 Ser man visuelt på Red0-planet så finner man:
 
 Dette finner man i Red0, Green0 og Blue0:
+
 ![](./uploads/upload_4a59af46924c8e5d1ff1d692ab95c150.png) ![](./uploads/upload_63473909ae6953d7a7c0185810657a14.png) ![](./uploads/upload_4e9c7b78c9a0786e6eb325c5a41853bc.png)
 
 Trekker man ut dataene fra cybershef med funksjonen "Exctract LSB" og velger den Green0 så ser man at headeren av dette planet begynner på .SLEDE8 som indikerer at vi har funnet en binærfil for [slede8](https://slede8.p26e.dev/)
