@@ -592,6 +592,7 @@ Nå var var det tid for å konvertere enkeltstående bilder til å vise deres R�
 `convert target-0.png -channel R -separate target_out_0.png`
 
 Da kommer dette til syne i det første bildet:
+
 ![](./uploads/upload_ec9e71eab3fa4641453a6b45309d7610.png)
 
 For oss som er redde for bash-script så ble det laget dette python-scriptet for å konvertere alle filene (111 stk):
@@ -947,11 +948,6 @@ Her får vi altså oppgave å sjekke listen med `snille_og_slemme.pdf` for å se
 ![](./uploads/upload_fbab4bc996721747ab4426aefae77d69.png)
 
 Her finner vi fort ut at Maximilian er den som skiller seg ut og vi kjører på med `PST{Maximilian}` som er løsningen på denne oppgaven og vi har nå avslørt identiteten til -M
-
-## Luke 23
-
-Lost_key.txt: `493`
-Fra luke23: `i13 B11 K10`
 
 ## Luke 24
 
