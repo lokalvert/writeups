@@ -110,7 +110,7 @@ plt.show()
 ```
 
 Denne løsninga plotter kordinatene inn i `matplotlib` og resulterer en grafisk tegning. Her kunne man brukt mer tid på å gjøre budskapet mer tydelig, men man kan se hva løsningsordet er:
-![](uploads/upload_5c1453de967b1b8227cd6f20050c8fdd.png)
+![](./uploads/upload_5c1453de967b1b8227cd6f20050c8fdd.png)
 
 `PST{MANGE SNILLE BARN I VERDEN}`
 
