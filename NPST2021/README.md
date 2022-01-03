@@ -306,8 +306,6 @@ Motivet på frimerket er av en slik karakter at det må undersøkes nærmere. Ka
 
 ![](./uploads/upload_8ce7d8f5d5283146f912b47bcdb70fab.png)
 
-Ser man visuelt på Red0-planet så finner man:
-
 Dette finner man i Red0, Green0 og Blue0:
 
 ![](./uploads/upload_4a59af46924c8e5d1ff1d692ab95c150.png) ![](./uploads/upload_63473909ae6953d7a7c0185810657a14.png) ![](./uploads/upload_4e9c7b78c9a0786e6eb325c5a41853bc.png)
